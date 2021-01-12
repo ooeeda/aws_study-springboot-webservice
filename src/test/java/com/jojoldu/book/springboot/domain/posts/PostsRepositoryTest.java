@@ -37,9 +37,9 @@ public class PostsRepositoryTest {
                 .author("ooeeda@gmail.com")
                 .build());
         postsRepository.save(Posts.builder()
-                .title("두번째")
-                .content("내용")
-                .author("계정이메일")
+                .title("게시글 불러오기")
+                .content("게시글 본문")
+                .author("ooeeda@gmail.com")
                 .build());
 
         List<Posts> postsList = postsRepository.findAll();
@@ -61,8 +61,8 @@ public class PostsRepositoryTest {
         LocalDateTime now = LocalDateTime.of(2019,6,4,0,0,0);
 
         postsRepository.save(Posts.builder()
-                .title("title")
-                .content("content")
+                .title("게시글 불러오기")
+                .content("게시글 본문")
                 .author("author")
                 .build());
 
